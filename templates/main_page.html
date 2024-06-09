@@ -1,34 +1,6 @@
-!DOCTYPE lang="en">
-<html>
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Cost Management Hub</title>
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="{{ url_for('static', filename='css/styles.css')}}"
-    />
-  </head>
-
-  <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand" href="/">Cost Management Hub</a>
-      <div class="collapse navbar-collapse">
-        <ul class="navbar-nav ml-auto">
-          <li><a href="https://secure.cemar.co.uk/Default.aspx" class="nav-link px-2 text-black" target="_blank">CEMAR</a></li>
-          <li><a href="https://he.aresremote.com" class="nav-link px-2 text-black" target="_blank">PRISM</a></li>
-          <li class="nav-item">
-            <a class="nav-link" href="{{ url_for('logout') }}">Log Out</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
- 
+{% extends "base.html" %} 
+{% block content %}
+          
 
 <!-- <h1 style="font-weight: bolder; color: aliceblue; font-family: sans-serif;">Buttons, links and all content overhere</h1> -->
 
@@ -37,5 +9,6 @@
     <br>
     <a href="https://tunnelsvariancedashboard-g9b9dirxshh2mhrqzqsg6c.streamlit.app/" class="btn btn-primary btn-large" target="_blank">Open Dashboard</a>
 </div>
-</body>
-</html>
+
+
+{% endblock %}
