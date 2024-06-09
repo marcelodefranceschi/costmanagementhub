@@ -59,5 +59,35 @@ def download():
 def main_page():
     return render_template("main_page.html")
 
+
+
+# @app.route('/register', methods=["GET", "POST"])
+# def register():
+#     if request.method == "POST":
+
+#         new_user = User(
+#             email=request.form.get('email'),
+#             name=request.form.get('name'),
+#             password=request.form.get('password')
+#         )
+        
+#         db.session.add(new_user)
+#         db.session.commit()
+        
+#         return render_template("secrets.html")
+    
+#     return render_template("register.html")
+
+
+
+# @app.route('/download')
+# def download():
+#     return send_from_directory('static', path="files/cheat_sheet.pdf")
+
+
+
+
+
+
 if __name__ == "__main__":
     app.run(debug=True)
